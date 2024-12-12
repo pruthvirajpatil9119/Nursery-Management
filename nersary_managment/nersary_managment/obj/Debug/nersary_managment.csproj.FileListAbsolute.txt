@@ -1,0 +1,5 @@
+C:\nersary managment\nersary_managment\nersary_managment\bin\nersary_managment.dll
+C:\nersary managment\nersary_managment\nersary_managment\bin\nersary_managment.pdb
+C:\nersary managment\nersary_managment\nersary_managment\obj\Debug\nersary_managment.dll
+C:\nersary managment\nersary_managment\nersary_managment\obj\Debug\nersary_managment.pdb
+C:\nersary managment\nersary_managment\nersary_managment\obj\Debug\nersary_managment.csprojResolveAssemblyReference.cache

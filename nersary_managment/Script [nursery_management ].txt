@@ -1,0 +1,103 @@
+USE [nursery_management ]
+GO
+/****** Object:  Table [dbo].[Customer_master]    Script Date: 03/03/2023 16:08:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Customer_master](
+	[cust_id] [int] NULL,
+	[cust_nm] [varchar](90) NULL,
+	[cust_addr] [varchar](90) NULL,
+	[cust_email] [varchar](90) NULL,
+	[cust_password] [varchar](90) NULL,
+	[cust_mobile] [varchar](90) NULL
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Order_master]    Script Date: 03/03/2023 16:08:22 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Order_master](
+	[ord_id] [int] NULL,
+	[ord_date] [varchar](90) NULL,
+	[pay_id] [int] NULL,
+	[grand_total] [float] NULL
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Payment]    Script Date: 03/03/2023 16:08:24 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Payment](
+	[pay_id] [int] NULL,
+	[cust_id] [int] NULL,
+	[pay_amt] [int] NULL,
+	[pay_date] [varchar](90) NULL,
+	[card_no] [int] NULL
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Plant_Type]    Script Date: 03/03/2023 16:08:26 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Plant_Type](
+	[type_id] [int] NULL,
+	[type_nm] [varchar](90) NULL
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Plant_Master]    Script Date: 03/03/2023 16:08:26 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Plant_Master](
+	[plant_id] [int] NULL,
+	[plant_nm] [varchar](90) NULL,
+	[type_id] [int] NULL,
+	[plant_height] [varchar](90) NULL,
+	[description] [varchar](max) NULL,
+	[rate] [int] NULL,
+	[stock] [int] NULL,
+	[photo] [varchar](100) NULL
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Order_details]    Script Date: 03/03/2023 16:08:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Order_details](
+	[ord_det_id] [int] NULL,
+	[ord_id] [int] NULL,
+	[plant_id] [int] NULL,
+	[rate] [int] NULL,
+	[qty] [int] NULL,
+	[amt] [int] NULL,
+	[GST] [float] NULL,
+	[Total] [int] NULL
+) ON [PRIMARY]
+GO

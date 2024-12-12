@@ -1,0 +1,50 @@
+create table Plant_Type(
+type_id int,
+type_nm varchar(90));
+
+
+create table Plant_Master(
+plant_id int,
+plant_nm varchar(90),
+type_id int,
+plant_height varchar(90),
+description varchar(max),
+rate int,
+stock int,
+photo varchar(100));
+
+create table Order_master(
+ord_id int, 
+ord_date varchar(10),
+pay_id int,
+grand_total float);
+
+create table Order_details(
+ord_det_id int,
+ord_id int,
+plant_id int,
+rate int,
+qty int,
+amt int,
+GST float,
+Total int);
+
+
+create table Payment(
+pay_id int,
+cust_id int, 
+pay_amt int,
+pay_date varchar(10));
+
+create table Customer_master(
+cust_id int,
+cust_nm varchar(90),
+cust_addr varchar(90),
+cust_email varchar(90),
+cust_password varchar(90),
+cust_mobile varchar(90));
+
+
+
+
+

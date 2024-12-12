@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6BC3F60-DD18-4600-9ED4-2A457D2BB2FA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nersary_managment</RootNamespace>
+    <AssemblyName>nersary_managment</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminDashBoard.aspx" />
+    <Content Include="AdminLogin.aspx" />
+    <Content Include="alazea-gh-pages\about.html" />
+    <Content Include="alazea-gh-pages\blog.html" />
+    <Content Include="alazea-gh-pages\cart.html" />
+    <Content Include="alazea-gh-pages\checkout.html" />
+    <Content Include="alazea-gh-pages\contact.html" />
+    <Content Include="alazea-gh-pages\css\animate.css" />
+    <Content Include="alazea-gh-pages\css\bootstrap.min.css" />
+    <Content Include="alazea-gh-pages\css\classy-nav.css" />
+    <Content Include="alazea-gh-pages\css\elegant-icon.css" />
+    <Content Include="alazea-gh-pages\css\font-awesome.min.css" />
+    <Content Include="alazea-gh-pages\css\magnific-popup.css" />
+    <Content Include="alazea-gh-pages\css\owl.carousel.min.css" />
+    <Content Include="alazea-gh-pages\fonts\classy.svg" />
+    <Content Include="alazea-gh-pages\fonts\ElegantIcons.svg" />
+    <Content Include="alazea-gh-pages\fonts\fontawesome-webfont.svg" />
+    <Content Include="alazea-gh-pages\img\bg-img\1.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\10.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\11.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\12.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\13.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\14.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\15.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\16.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\17.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\18.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\19.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\2.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\20.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\21.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\22.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\23.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\24.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\25.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\26.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\27.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\28.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\29.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\3.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\30.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\31.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\32.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\33.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\34.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\35.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\36.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\37.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\38.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\39.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\4.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\40.png" />
+    <Content Include="alazea-gh-pages\img\bg-img\41.png" />
+    <Content Include="alazea-gh-pages\img\bg-img\42.png" />
+    <Content Include="alazea-gh-pages\img\bg-img\43.png" />
+    <Content Include="alazea-gh-pages\img\bg-img\44.png" />
+    <Content Include="alazea-gh-pages\img\bg-img\45.png" />
+    <Content Include="alazea-gh-pages\img\bg-img\46.png" />
+    <Content Include="alazea-gh-pages\img\bg-img\47.png" />
+    <Content Include="alazea-gh-pages\img\bg-img\48.png" />
+    <Content Include="alazea-gh-pages\img\bg-img\49.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\5.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\6.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\7.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\8.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\9.jpg" />
+    <Content Include="alazea-gh-pages\img\bg-img\cool-facts.png" />
+    <Content Include="alazea-gh-pages\img\bg-img\subscribe.png" />
+    <Content Include="alazea-gh-pages\img\bg-img\team1.png" />
+    <Content Include="alazea-gh-pages\img\bg-img\team2.png" />
+    <Content Include="alazea-gh-pages\img\bg-img\team3.png" />
+    <Content Include="alazea-gh-pages\img\bg-img\team4.png" />
+    <Content Include="alazea-gh-pages\img\core-img\b1.png" />
+    <Content Include="alazea-gh-pages\img\core-img\b2.png" />
+    <Content Include="alazea-gh-pages\img\core-img\b3.png" />
+    <Content Include="alazea-gh-pages\img\core-img\b4.png" />
+    <Content Include="alazea-gh-pages\img\core-img\cf1.png" />
+    <Content Include="alazea-gh-pages\img\core-img\cf2.png" />
+    <Content Include="alazea-gh-pages\img\core-img\cf3.png" />
+    <Content Include="alazea-gh-pages\img\core-img\cf4.png" />
+    <Content Include="alazea-gh-pages\img\core-img\favicon.ico" />
+    <Content Include="alazea-gh-pages\img\core-img\leaf.png" />
+    <Content Include="alazea-gh-pages\img\core-img\logo.png" />
+    <Content Include="alazea-gh-pages\img\core-img\pot.png" />
+    <Content Include="alazea-gh-pages\img\core-img\s1.png" />
+    <Content Include="alazea-gh-pages\img\core-img\s2.png" />
+    <Content Include="alazea-gh-pages\img\core-img\s3.png" />
+    <Content Include="alazea-gh-pages\js\active.js" />
+    <Content Include="alazea-gh-pages\js\bootstrap\bootstrap.min.js" />
+    <Content Include="alazea-gh-pages\js\bootstrap\popper.min.js" />
+    <Content Include="alazea-gh-pages\js\jquery\jquery-2.2.4.min.js" />
+    <Content Include="alazea-gh-pages\js\plugins\plugins.js" />
+    <Content Include="alazea-gh-pages\portfolio.html" />
+    <Content Include="alazea-gh-pages\shop-details.html" />
+    <Content Include="alazea-gh-pages\shop.html" />
+    <Content Include="alazea-gh-pages\single-portfolio.html" />
+    <Content Include="alazea-gh-pages\single-post.html" />
+    <Content Include="alazea-gh-pages\style.css" />
+    <Content Include="communication-email-icon-plex-iconset-cornmanthe-38.png" />
+    <Content Include="CustomerLogin.aspx" />
+    <Content Include="Customer_master.aspx" />
+    <Content Include="download %281%29.png" />
+    <Content Include="download.png" />
+    <Content Include="images.png" />
+    <Content Include="Invoice.aspx" />
+    <Content Include="lep.jpg" />
+    <Content Include="Order_details.aspx" />
+    <Content Include="Order_master.aspx" />
+    <Content Include="Payment.aspx" />
+    <Content Include="plant\bill.aspx" />
+    <Content Include="plant\communication-email-icon-plex-iconset-cornmanthe-38.png" />
+    <Content Include="plant\download %281%29.png" />
+    <Content Include="plant\download.png" />
+    <Content Include="plant\images.png" />
+    <Content Include="plant\lep.jpg" />
+    <Content Include="plant\png-transparent-leaf-ecology-illustration-leaf-photography-maple-leaf-logo-thumbnail.png" />
+    <Content Include="Plant_Master.aspx" />
+    <Content Include="Plant_Type.aspx" />
+    <Content Include="png-transparent-leaf-ecology-illustration-leaf-photography-maple-leaf-logo-thumbnail.png" />
+    <Content Include="Report\alazea-gh-pages\about.html" />
+    <Content Include="Report\alazea-gh-pages\blog.html" />
+    <Content Include="Report\alazea-gh-pages\cart.html" />
+    <Content Include="Report\alazea-gh-pages\checkout.html" />
+    <Content Include="Report\alazea-gh-pages\contact.html" />
+    <Content Include="Report\alazea-gh-pages\css\animate.css" />
+    <Content Include="Report\alazea-gh-pages\css\bootstrap.min.css" />
+    <Content Include="Report\alazea-gh-pages\css\classy-nav.css" />
+    <Content Include="Report\alazea-gh-pages\css\elegant-icon.css" />
+    <Content Include="Report\alazea-gh-pages\css\font-awesome.min.css" />
+    <Content Include="Report\alazea-gh-pages\css\magnific-popup.css" />
+    <Content Include="Report\alazea-gh-pages\css\owl.carousel.min.css" />
+    <Content Include="Report\alazea-gh-pages\fonts\classy.svg" />
+    <Content Include="Report\alazea-gh-pages\fonts\ElegantIcons.svg" />
+    <Content Include="Report\alazea-gh-pages\fonts\fontawesome-webfont.svg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\1.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\10.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\11.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\12.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\13.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\14.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\15.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\16.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\17.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\18.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\19.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\2.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\20.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\21.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\22.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\23.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\24.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\25.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\26.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\27.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\28.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\29.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\3.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\30.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\31.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\32.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\33.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\34.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\35.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\36.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\37.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\38.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\39.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\4.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\40.png" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\41.png" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\42.png" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\43.png" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\44.png" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\45.png" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\46.png" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\47.png" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\48.png" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\49.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\5.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\6.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\7.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\8.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\9.jpg" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\cool-facts.png" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\subscribe.png" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\team1.png" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\team2.png" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\team3.png" />
+    <Content Include="Report\alazea-gh-pages\img\bg-img\team4.png" />
+    <Content Include="Report\alazea-gh-pages\img\core-img\b1.png" />
+    <Content Include="Report\alazea-gh-pages\img\core-img\b2.png" />
+    <Content Include="Report\alazea-gh-pages\img\core-img\b3.png" />
+    <Content Include="Report\alazea-gh-pages\img\core-img\b4.png" />
+    <Content Include="Report\alazea-gh-pages\img\core-img\cf1.png" />
+    <Content Include="Report\alazea-gh-pages\img\core-img\cf2.png" />
+    <Content Include="Report\alazea-gh-pages\img\core-img\cf3.png" />
+    <Content Include="Report\alazea-gh-pages\img\core-img\cf4.png" />
+    <Content Include="Report\alazea-gh-pages\img\core-img\favicon.ico" />
+    <Content Include="Report\alazea-gh-pages\img\core-img\leaf.png" />
+    <Content Include="Report\alazea-gh-pages\img\core-img\logo.png" />
+    <Content Include="Report\alazea-gh-pages\img\core-img\pot.png" />
+    <Content Include="Report\alazea-gh-pages\img\core-img\s1.png" />
+    <Content Include="Report\alazea-gh-pages\img\core-img\s2.png" />
+    <Content Include="Report\alazea-gh-pages\img\core-img\s3.png" />
+    <Content Include="Report\alazea-gh-pages\js\active.js" />
+    <Content Include="Report\alazea-gh-pages\js\bootstrap\bootstrap.min.js" />
+    <Content Include="Report\alazea-gh-pages\js\bootstrap\popper.min.js" />
+    <Content Include="Report\alazea-gh-pages\js\jquery\jquery-2.2.4.min.js" />
+    <Content Include="Report\alazea-gh-pages\js\plugins\plugins.js" />
+    <Content Include="Report\alazea-gh-pages\portfolio.html" />
+    <Content Include="Report\alazea-gh-pages\shop-details.html" />
+    <Content Include="Report\alazea-gh-pages\shop.html" />
+    <Content Include="Report\alazea-gh-pages\single-portfolio.html" />
+    <Content Include="Report\alazea-gh-pages\single-post.html" />
+    <Content Include="Report\alazea-gh-pages\style.css" />
+    <Content Include="Report\Customer_master.aspx" />
+    <Content Include="Report\Customer_wise_payment.aspx" />
+    <Content Include="Report\DateWisePayment.aspx" />
+    <Content Include="Report\Payment_wise_order_master.aspx" />
+    <Content Include="Report\Plant_Type_wise_Plant_Master.aspx" />
+    <Content Include="Report\rpt_Order_details.aspx" />
+    <Content Include="Report\rpt_Order_master.aspx" />
+    <Content Include="Report\rpt_Payment.aspx" />
+    <Content Include="Report\rpt_Plant_Master.aspx" />
+    <Content Include="Report\rpt_Plant_type.aspx" />
+    <Content Include="Search\alazea-gh-pages\about.html" />
+    <Content Include="Search\alazea-gh-pages\blog.html" />
+    <Content Include="Search\alazea-gh-pages\cart.html" />
+    <Content Include="Search\alazea-gh-pages\checkout.html" />
+    <Content Include="Search\alazea-gh-pages\contact.html" />
+    <Content Include="Search\alazea-gh-pages\css\animate.css" />
+    <Content Include="Search\alazea-gh-pages\css\bootstrap.min.css" />
+    <Content Include="Search\alazea-gh-pages\css\classy-nav.css" />
+    <Content Include="Search\alazea-gh-pages\css\elegant-icon.css" />
+    <Content Include="Search\alazea-gh-pages\css\font-awesome.min.css" />
+    <Content Include="Search\alazea-gh-pages\css\magnific-popup.css" />
+    <Content Include="Search\alazea-gh-pages\css\owl.carousel.min.css" />
+    <Content Include="Search\alazea-gh-pages\fonts\classy.svg" />
+    <Content Include="Search\alazea-gh-pages\fonts\ElegantIcons.svg" />
+    <Content Include="Search\alazea-gh-pages\fonts\fontawesome-webfont.svg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\1.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\10.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\11.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\12.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\13.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\14.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\15.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\16.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\17.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\18.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\19.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\2.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\20.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\21.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\22.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\23.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\24.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\25.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\26.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\27.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\28.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\29.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\3.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\30.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\31.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\32.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\33.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\34.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\35.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\36.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\37.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\38.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\39.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\4.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\40.png" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\41.png" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\42.png" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\43.png" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\44.png" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\45.png" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\46.png" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\47.png" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\48.png" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\49.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\5.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\6.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\7.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\8.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\9.jpg" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\cool-facts.png" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\subscribe.png" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\team1.png" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\team2.png" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\team3.png" />
+    <Content Include="Search\alazea-gh-pages\img\bg-img\team4.png" />
+    <Content Include="Search\alazea-gh-pages\img\core-img\b1.png" />
+    <Content Include="Search\alazea-gh-pages\img\core-img\b2.png" />
+    <Content Include="Search\alazea-gh-pages\img\core-img\b3.png" />
+    <Content Include="Search\alazea-gh-pages\img\core-img\b4.png" />
+    <Content Include="Search\alazea-gh-pages\img\core-img\cf1.png" />
+    <Content Include="Search\alazea-gh-pages\img\core-img\cf2.png" />
+    <Content Include="Search\alazea-gh-pages\img\core-img\cf3.png" />
+    <Content Include="Search\alazea-gh-pages\img\core-img\cf4.png" />
+    <Content Include="Search\alazea-gh-pages\img\core-img\favicon.ico" />
+    <Content Include="Search\alazea-gh-pages\img\core-img\leaf.png" />
+    <Content Include="Search\alazea-gh-pages\img\core-img\logo.png" />
+    <Content Include="Search\alazea-gh-pages\img\core-img\pot.png" />
+    <Content Include="Search\alazea-gh-pages\img\core-img\s1.png" />
+    <Content Include="Search\alazea-gh-pages\img\core-img\s2.png" />
+    <Content Include="Search\alazea-gh-pages\img\core-img\s3.png" />
+    <Content Include="Search\alazea-gh-pages\img\go-green-png-5-transparent-1.png" />
+    <Content Include="Search\alazea-gh-pages\index.html" />
+    <Content Include="Search\alazea-gh-pages\js\active.js" />
+    <Content Include="Search\alazea-gh-pages\js\bootstrap\bootstrap.min.js" />
+    <Content Include="Search\alazea-gh-pages\js\bootstrap\popper.min.js" />
+    <Content Include="Search\alazea-gh-pages\js\jquery\jquery-2.2.4.min.js" />
+    <Content Include="Search\alazea-gh-pages\js\plugins\plugins.js" />
+    <Content Include="Search\alazea-gh-pages\portfolio.html" />
+    <Content Include="Search\alazea-gh-pages\shop-details.html" />
+    <Content Include="Search\alazea-gh-pages\shop.html" />
+    <Content Include="Search\alazea-gh-pages\single-portfolio.html" />
+    <Content Include="Search\alazea-gh-pages\single-post.html" />
+    <Content Include="Search\alazea-gh-pages\style.css" />
+    <Content Include="Search\Cancelcartitem.aspx" />
+    <Content Include="Search\Customer_Dashboard.aspx" />
+    <Content Include="Search\Searchbycat.aspx" />
+    <Content Include="Search\Searchdetails.aspx" />
+    <Content Include="Search\Search_all.aspx" />
+    <Content Include="Search\Showcart.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminDashBoard.aspx.cs">
+      <DependentUpon>AdminDashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminDashBoard.aspx.designer.cs">
+      <DependentUpon>AdminDashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerLogin.aspx.cs">
+      <DependentUpon>CustomerLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerLogin.aspx.designer.cs">
+      <DependentUpon>CustomerLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_master.aspx.cs">
+      <DependentUpon>Customer_master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer_master.aspx.designer.cs">
+      <DependentUpon>Customer_master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.aspx.cs">
+      <DependentUpon>Invoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice.aspx.designer.cs">
+      <DependentUpon>Invoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order_details.aspx.cs">
+      <DependentUpon>Order_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order_details.aspx.designer.cs">
+      <DependentUpon>Order_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order_master.aspx.cs">
+      <DependentUpon>Order_master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order_master.aspx.designer.cs">
+      <DependentUpon>Order_master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="plant\bill.aspx.cs">
+      <DependentUpon>bill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="plant\bill.aspx.designer.cs">
+      <DependentUpon>bill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plant_Master.aspx.cs">
+      <DependentUpon>Plant_Master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plant_Master.aspx.designer.cs">
+      <DependentUpon>Plant_Master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plant_Type.aspx.cs">
+      <DependentUpon>Plant_Type.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plant_Type.aspx.designer.cs">
+      <DependentUpon>Plant_Type.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\Customer_master.aspx.cs">
+      <DependentUpon>Customer_master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Customer_master.aspx.designer.cs">
+      <DependentUpon>Customer_master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Customer_wise_payment.aspx.cs">
+      <DependentUpon>Customer_wise_payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Customer_wise_payment.aspx.designer.cs">
+      <DependentUpon>Customer_wise_payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DateWisePayment.aspx.cs">
+      <DependentUpon>DateWisePayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\DateWisePayment.aspx.designer.cs">
+      <DependentUpon>DateWisePayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Payment_wise_order_master.aspx.cs">
+      <DependentUpon>Payment_wise_order_master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Payment_wise_order_master.aspx.designer.cs">
+      <DependentUpon>Payment_wise_order_master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Plant_Type_wise_Plant_Master.aspx.cs">
+      <DependentUpon>Plant_Type_wise_Plant_Master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Plant_Type_wise_Plant_Master.aspx.designer.cs">
+      <DependentUpon>Plant_Type_wise_Plant_Master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rpt_Order_details.aspx.cs">
+      <DependentUpon>rpt_Order_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_Order_details.aspx.designer.cs">
+      <DependentUpon>rpt_Order_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rpt_Order_master.aspx.cs">
+      <DependentUpon>rpt_Order_master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_Order_master.aspx.designer.cs">
+      <DependentUpon>rpt_Order_master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rpt_Payment.aspx.cs">
+      <DependentUpon>rpt_Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_Payment.aspx.designer.cs">
+      <DependentUpon>rpt_Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rpt_Plant_Master.aspx.cs">
+      <DependentUpon>rpt_Plant_Master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_Plant_Master.aspx.designer.cs">
+      <DependentUpon>rpt_Plant_Master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rpt_Plant_type.aspx.cs">
+      <DependentUpon>rpt_Plant_type.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_Plant_type.aspx.designer.cs">
+      <DependentUpon>rpt_Plant_type.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Cancelcartitem.aspx.cs">
+      <DependentUpon>Cancelcartitem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Cancelcartitem.aspx.designer.cs">
+      <DependentUpon>Cancelcartitem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Customer_Dashboard.aspx.cs">
+      <DependentUpon>Customer_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Customer_Dashboard.aspx.designer.cs">
+      <DependentUpon>Customer_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Searchbycat.aspx.cs">
+      <DependentUpon>Searchbycat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Searchbycat.aspx.designer.cs">
+      <DependentUpon>Searchbycat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Searchdetails.aspx.cs">
+      <DependentUpon>Searchdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Searchdetails.aspx.designer.cs">
+      <DependentUpon>Searchdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Search_all.aspx.cs">
+      <DependentUpon>Search_all.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Search_all.aspx.designer.cs">
+      <DependentUpon>Search_all.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Showcart.aspx.cs">
+      <DependentUpon>Showcart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Showcart.aspx.designer.cs">
+      <DependentUpon>Showcart.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="alazea-gh-pages\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\style.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\_fonts.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\_mixin.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\_responsive.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\_theme_color.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\475e2dc6ecb7bd594adf3c7ef23377f13ce5685a\style.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\475e2dc6ecb7bd594adf3c7ef23377f13ce5685a\_fonts.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\475e2dc6ecb7bd594adf3c7ef23377f13ce5685a\_mixin.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\475e2dc6ecb7bd594adf3c7ef23377f13ce5685a\_responsive.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\475e2dc6ecb7bd594adf3c7ef23377f13ce5685a\_theme_color.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\92c2ff24315db15914b9d82f622cf290dd0a1856\style.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\92c2ff24315db15914b9d82f622cf290dd0a1856\_fonts.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\92c2ff24315db15914b9d82f622cf290dd0a1856\_mixin.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\92c2ff24315db15914b9d82f622cf290dd0a1856\_responsive.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\92c2ff24315db15914b9d82f622cf290dd0a1856\_theme_color.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\style.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\_mixin.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\_responsive.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\_theme_color.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\_variables.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\style.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\_mixin.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\_responsive.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\_theme_color.scssc" />
+    <Content Include="alazea-gh-pages\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\_variables.scssc" />
+    <Content Include="alazea-gh-pages\fonts\classy.eot" />
+    <Content Include="alazea-gh-pages\fonts\classy.ttf" />
+    <Content Include="alazea-gh-pages\fonts\classy.woff" />
+    <Content Include="alazea-gh-pages\fonts\ElegantIcons.eot" />
+    <Content Include="alazea-gh-pages\fonts\ElegantIcons.ttf" />
+    <Content Include="alazea-gh-pages\fonts\ElegantIcons.woff" />
+    <Content Include="alazea-gh-pages\fonts\fontawesome-webfont.eot" />
+    <Content Include="alazea-gh-pages\fonts\fontawesome-webfont.ttf" />
+    <Content Include="alazea-gh-pages\fonts\fontawesome-webfont.woff" />
+    <Content Include="alazea-gh-pages\fonts\fontawesome-webfont.woff2" />
+    <Content Include="alazea-gh-pages\fonts\FontAwesome.otf" />
+    <Content Include="alazea-gh-pages\scss\style.scss" />
+    <Content Include="alazea-gh-pages\scss\_fonts.scss" />
+    <Content Include="alazea-gh-pages\scss\_mixin.scss" />
+    <Content Include="alazea-gh-pages\scss\_responsive.scss" />
+    <Content Include="alazea-gh-pages\scss\_theme_color.scss" />
+    <Content Include="alazea-gh-pages\style.css.map" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\_fonts.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\_mixin.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\_responsive.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\_theme_color.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\style.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\475e2dc6ecb7bd594adf3c7ef23377f13ce5685a\_fonts.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\475e2dc6ecb7bd594adf3c7ef23377f13ce5685a\_mixin.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\475e2dc6ecb7bd594adf3c7ef23377f13ce5685a\_responsive.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\475e2dc6ecb7bd594adf3c7ef23377f13ce5685a\_theme_color.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\475e2dc6ecb7bd594adf3c7ef23377f13ce5685a\style.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\92c2ff24315db15914b9d82f622cf290dd0a1856\_fonts.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\92c2ff24315db15914b9d82f622cf290dd0a1856\_mixin.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\92c2ff24315db15914b9d82f622cf290dd0a1856\_responsive.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\92c2ff24315db15914b9d82f622cf290dd0a1856\_theme_color.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\92c2ff24315db15914b9d82f622cf290dd0a1856\style.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\_mixin.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\_responsive.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\_theme_color.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\_variables.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\style.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\_mixin.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\_responsive.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\_theme_color.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\_variables.scssc" />
+    <Content Include="Report\alazea-gh-pages\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\style.scssc" />
+    <Content Include="Report\alazea-gh-pages\fonts\classy.eot" />
+    <Content Include="Report\alazea-gh-pages\fonts\classy.ttf" />
+    <Content Include="Report\alazea-gh-pages\fonts\classy.woff" />
+    <Content Include="Report\alazea-gh-pages\fonts\ElegantIcons.eot" />
+    <Content Include="Report\alazea-gh-pages\fonts\ElegantIcons.ttf" />
+    <Content Include="Report\alazea-gh-pages\fonts\ElegantIcons.woff" />
+    <Content Include="Report\alazea-gh-pages\fonts\fontawesome-webfont.eot" />
+    <Content Include="Report\alazea-gh-pages\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Report\alazea-gh-pages\fonts\fontawesome-webfont.woff" />
+    <Content Include="Report\alazea-gh-pages\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Report\alazea-gh-pages\fonts\FontAwesome.otf" />
+    <Content Include="Report\alazea-gh-pages\scss\_fonts.scss" />
+    <Content Include="Report\alazea-gh-pages\scss\_mixin.scss" />
+    <Content Include="Report\alazea-gh-pages\scss\_responsive.scss" />
+    <Content Include="Report\alazea-gh-pages\scss\_theme_color.scss" />
+    <Content Include="Report\alazea-gh-pages\scss\style.scss" />
+    <Content Include="Report\alazea-gh-pages\style.css.map" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\_fonts.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\_mixin.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\_responsive.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\_theme_color.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\03465f23f19c9b31771cc8acec61089cccc1845c\style.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\475e2dc6ecb7bd594adf3c7ef23377f13ce5685a\_fonts.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\475e2dc6ecb7bd594adf3c7ef23377f13ce5685a\_mixin.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\475e2dc6ecb7bd594adf3c7ef23377f13ce5685a\_responsive.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\475e2dc6ecb7bd594adf3c7ef23377f13ce5685a\_theme_color.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\475e2dc6ecb7bd594adf3c7ef23377f13ce5685a\style.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\92c2ff24315db15914b9d82f622cf290dd0a1856\_fonts.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\92c2ff24315db15914b9d82f622cf290dd0a1856\_mixin.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\92c2ff24315db15914b9d82f622cf290dd0a1856\_responsive.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\92c2ff24315db15914b9d82f622cf290dd0a1856\_theme_color.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\92c2ff24315db15914b9d82f622cf290dd0a1856\style.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\_mixin.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\_responsive.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\_theme_color.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\_variables.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\9568d30ed5d2cebc2ad5df4154c8df8099b75c0b\style.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\_mixin.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\_responsive.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\_theme_color.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\_variables.scssc" />
+    <Content Include="Search\alazea-gh-pages\.sass-cache\b687762b7660b1f71ae40e600add14c590cfdbc7\style.scssc" />
+    <Content Include="Search\alazea-gh-pages\fonts\classy.eot" />
+    <Content Include="Search\alazea-gh-pages\fonts\classy.ttf" />
+    <Content Include="Search\alazea-gh-pages\fonts\classy.woff" />
+    <Content Include="Search\alazea-gh-pages\fonts\ElegantIcons.eot" />
+    <Content Include="Search\alazea-gh-pages\fonts\ElegantIcons.ttf" />
+    <Content Include="Search\alazea-gh-pages\fonts\ElegantIcons.woff" />
+    <Content Include="Search\alazea-gh-pages\fonts\fontawesome-webfont.eot" />
+    <Content Include="Search\alazea-gh-pages\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Search\alazea-gh-pages\fonts\fontawesome-webfont.woff" />
+    <Content Include="Search\alazea-gh-pages\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Search\alazea-gh-pages\fonts\FontAwesome.otf" />
+    <Content Include="Search\alazea-gh-pages\scss\_fonts.scss" />
+    <Content Include="Search\alazea-gh-pages\scss\_mixin.scss" />
+    <Content Include="Search\alazea-gh-pages\scss\_responsive.scss" />
+    <Content Include="Search\alazea-gh-pages\scss\_theme_color.scss" />
+    <Content Include="Search\alazea-gh-pages\scss\style.scss" />
+    <Content Include="Search\alazea-gh-pages\style.css.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="upload\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:38528/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
